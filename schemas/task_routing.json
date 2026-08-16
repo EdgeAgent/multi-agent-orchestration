@@ -1,0 +1,12 @@
+{
+  "orchestration_routing": {
+    "task_id": "TASK_2026_8891",
+    "selected_topology": "HIERARCHICAL_SUPERVISOR",
+    "asymmetric_routing": {
+      "orchestrator_model": "gpt-4o",
+      "worker_model": "gpt-4o-mini"
+    },
+    "max_token_budget": 150000,
+    "max_execution_timeout_sec": 300
+  }
+}

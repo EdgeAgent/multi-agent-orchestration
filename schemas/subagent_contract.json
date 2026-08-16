@@ -1,0 +1,19 @@
+{
+  "subagent_contract": {
+    "agent_id": "crypto_perp_risk_verifier",
+    "role_scope": "Validate trade position sizing and stop loss limits.",
+    "input_schema": {
+      "staged_payload": "string",
+      "max_risk_pct": "number"
+    },
+    "output_schema": {
+      "passed": "boolean",
+      "risk_score": "number",
+      "rejection_reasons": "array"
+    },
+    "context_limit_policy": {
+      "max_turn_history": 3,
+      "enable_text_compression": true
+    }
+  }
+}
